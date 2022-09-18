@@ -9,18 +9,18 @@ int f()
     int num = 0;
     while (!Flag)
     {
-        Console.WriteLine("введите целое число больще > 2");
+        Console.WriteLine("введите целое число больше либо равно 2");
         str = Console.ReadLine();
         bool isNum = int.TryParse(str, out num);
         if (isNum == false)
         {
-            Console.WriteLine("Это не число либо оно не целое, введите число >2");
+            Console.WriteLine("Это не число либо оно не целое, введите число больше либо равно 2");
             Flag = false;
             continue;
         }
         if (num < 2)
         {
-            Console.WriteLine("в заданном диапазоне нет четных чисел, введите число >2");
+            Console.WriteLine("в заданном диапазоне нет четных чисел, введите число больше либо равно 2");
             Flag = false;
         }
 
